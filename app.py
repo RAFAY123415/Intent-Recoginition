@@ -1,7 +1,13 @@
 import openai
 import streamlit as st
+import json
+  
+# Opening JSON file
+f = open('K.json')
+data = json.load(f)
+key=data['a'][0]['key']
 
-openai.api_key ='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'
+openai.api_key =key
 
 st.header("Intent Recoginiton of Travel Airline Information System")
 review  = st.text_area("Enter Text To Recognize Content")
