@@ -1,7 +1,7 @@
 import openai
 import streamlit as st
 
-openai.api_key ='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'
+openai.api_key ='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'
 
 st.header("Intent Recoginiton of Travel Airline Information System")
 review  = st.text_area("Enter Text To Recognize Content")
